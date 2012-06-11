@@ -6,3 +6,7 @@ Most of this stuff is just static HTML, CSS, JS for our public site, but there w
 Aside from typical marketing stuff, prospective Hackerati will be able to register and fill in their job application/profile, consisting mostly of a bio, an uploaded resume, and social profiles (e.g. LinkedIn, Github, StackOverflow, personal sites, etc.). With their permission, we'll automatically crawl these sites and tag their profiles with interests. Our privacy policy will reference this repo for full transparency.
 
 Our site will be hosted on Google App Engine, running on Pyton and Django.
+
+Django non-rel for Google App Engine on Python 2.7
+
+https://github.com/bobwei/Django-non-rel-for-Google-App-Engine-on-Python-2.7.git
