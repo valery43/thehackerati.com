@@ -1,34 +1,26 @@
-{% extends 'base.html' %}
+{% extends 'about_layout.html' %}
 {% block title %}Contact Us{% endblock %}
 
 {% block content %}
-    <div class="container">
-      <div class="row">
-        <div class="span16">
-          <h1>Contact Us</h1>
-        </div>
-      </div>
+<h1>Contact Us</h1>
 
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="span4">
-          <h2>Heading</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
-        <div class="span4">
-          <h2>Heading</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-       </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
-      </div>
+<p>
+The Hackerati, Inc.<br />
+c/o The Cooper Union<br />
+41 Cooper Square, FL2<br />
+New York, NY 10003<br />
+<a href="http://maps.google.com/maps?q=41+Cooper+Square,+FL2,+New+York,+NY+10003&hl=en&sll=40.728698,-73.99026&sspn=0.088849,0.139046&hq=41+Cooper+Square,+New+York,+NY+10003&radius=15000&t=m&z=13&iwloc=A" target="_blank">(map)</a>
+</p>
 
-      <hr>
+<p><i class="icon-phone"></i> (917) 426-1066</p>
 
-    </div> <!-- /container -->
+<p>
+Rebel Mouse: <a href="http://www.rebelmouse.com/TheHackerati/" target="_blank">TheHackerati</a><br />
+<i class="icon-twitter"></i> Twitter: <a href="http://www.twitter.com/TheHackerati/team" target="_blank">@TheHackerati</a><br />
+<i class="icon-github"></i> GitHub: <a href="https://github.com/thehackerati" target="_blank">github/thehackerati</a>
+</p>
+{% endblock %}
+
+{% block sidebar %}
+<img src="/static/img/thehackerati_vcard_qr.png" width="200" height="200" alt="Our VCARD"></img>
 {% endblock %}

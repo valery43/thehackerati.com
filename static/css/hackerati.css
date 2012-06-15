@@ -2,6 +2,16 @@
  * 
  */
 
+.brand {
+  color: #ffffff;
+}
+
 .container footer p {
   text-align: center;
+}
+
+.centered_img {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

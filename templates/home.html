@@ -1,36 +1,90 @@
-{% extends 'base.html' %}
+{% extends 'base_template.html' %}
 {% block title %}Welcome to The Hackerati!{% endblock %}
 
-{% block content %}
+{% block css %}
+{% endblock %}
+
+{% block preload_js %}
+{% endblock %}
+
+{% block layout %}
     <div class="container">
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
-        <h1>The Hackerati</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+        <h1>the hack-er-a-ti</h1>
+        <h2><i>plural noun</i></h2>
+        <large>
+        <ol>
+          <li>persons possessing superior hacking abilities</li>
+          <li>a world-class engineering firm, based in New York City, delivering <strong>Engineering as a Service</strong></li>
+        </ol>
+        </large>
+        <p><a class="btn btn-primary btn-large" href="/engineering">Learn more &raquo;</a></p>
       </div>
 
-      <!-- Example row of columns -->
       <div class="row">
+        <div class="span8">
+          <div class="row">
+            <div class="span4">
+              <h2>Engineering</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn" href="/engineering">View details &raquo;</a></p>
+            </div>
+            <div class="span4">
+              <h2>Innovation</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn" href="/innovation">View details &raquo;</a></p>
+            </div>
+          </div>
+          <div class="row">
+
         <div class="span4">
-          <h2>Heading</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <h2>Agility</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn" href="/agility">View details &raquo;</a></p>
+        </div>
+
+        <div class="span4">
+          <h2>Value</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn" href="/value">View details &raquo;</a></p>
+        </div>
+          </div>
         </div>
         <div class="span4">
-          <h2>Heading</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-       </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'list',
+  rpp: 30,
+  interval: 30000,
+  title: 'The Hackerati',
+  subject: 'Status',
+  width: 'auto',
+  height: 300,
+  theme: {
+    shell: {
+      background: '#eeeeee',
+      color: '#333333'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#000000',
+      links: '#0088cc'
+    }
+  },
+  features: {
+    scrollbar: true,
+    loop: false,
+    live: true,
+    behavior: 'all'
+  }
+}).render().setList('TheHackerati', 'team').start();
+</script>
         </div>
       </div>
-
-      <hr>
 
     </div> <!-- /container -->
 {% endblock %}
