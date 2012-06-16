@@ -6,11 +6,16 @@
         <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
-              <li class="nav-header"><a href="/team">Innovation</a></li>
+              <li class="nav-header"><a href="/innovation">Innovation</a></li>
+              <li><a href="/culture">Culture</a></li>
+<!--
+              <li><a href="/labs">Labs</a></li>
+-->
             </ul>
           </div>
         </div>
         <div class="span6">
+          <h1><i class="icon-beaker"></i> {% block title %}{% endblock %}</h1>
           {% block content %}{% endblock %}
         </div>
         <div class="span3">

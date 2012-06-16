@@ -1,23 +1,15 @@
 {% extends 'base_template.html' %}
 {% block title %}Welcome to The Hackerati!{% endblock %}
 
-{% block css %}
-{% endblock %}
-
-{% block preload_js %}
-{% endblock %}
-
 {% block layout %}
     <div class="container">
-
-      <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
         <h1>the hack-er-a-ti</h1>
         <h2><i>plural noun</i></h2>
         <large>
         <ol>
           <li>persons possessing superior hacking abilities</li>
-          <li>a world-class engineering firm, based in New York City, delivering <strong>Engineering as a Service</strong></li>
+          <li>a world-class engineering firm, based in New York City, delivering <strong>Engineering as a Service</strong>: variable-cost <a href="/product">product development</a>, <a href="/research">research</a>, and other <a href="/custom">custom</a> software and hardware development.</li>
         </ol>
         </large>
         <p><a class="btn btn-primary btn-large" href="/engineering">Learn more &raquo;</a></p>
@@ -25,33 +17,43 @@
 
       <div class="row">
         <div class="span8">
+
+          <div class="row">
+            <div class="span8">
+                <h2><i class="icon-cloud"></i> Your Strategic Engineering Partner</h2>
+<p>As organizations are growing more dependent on sophisticated data analysis to maintain their competitive advantage, their ability to hire the technical talent needed to leverage this analysis is dwindling.</p>
+<blockquote>
+<p>"By 2018, the United States alone could face a shortage of 140,000 to 190,000 people with deep analytical skills as well as 1.5 million managers and analysts with the know-how to use the analysis of big data to make effective decisions."</p>
+<small>McKinsey Global Institute</small>
+</blockquote>
+<p>The Hackerati can help! <a href="/contact">Contact us</a>!</p>
+              </div>
+          </div>
+
           <div class="row">
             <div class="span4">
-              <h2>Engineering</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="/engineering">View details &raquo;</a></p>
+              <h2><a href="/engineering"><i class="icon-cogs"></i> Engineering</a></h2>
+<p>We live for social and mobile apps, Big Data, analytics, natural language processing, artificial intelligence, and machine learning.</p>
             </div>
             <div class="span4">
-              <h2>Innovation</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="/innovation">View details &raquo;</a></p>
+              <h2><a href="/innovation"><i class="icon-beaker"></i> Innovation</a></h2>
+<p>We're all <a href="/culture">hackers</a>! We love to solve problems, to improve things, and to invent stuff.</p>
             </div>
           </div>
-          <div class="row">
 
-        <div class="span4">
-          <h2>Agility</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="/agility">View details &raquo;</a></p>
-        </div>
-
-        <div class="span4">
-          <h2>Value</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="/value">View details &raquo;</a></p>
-        </div>
+        <div class="row">
+              <div class="span4">
+                <h2><a href="/agility"><i class="icon-bolt"></i> Agility</a></h2>
+<p>With no long-term commitments, we allow your business to rapidly pivot within your budget and your timeframe.</p>
+              </div>
+              <div class="span4">
+                <h2><a href="/value"><i class="icon-thumbs-up"></i> Value</a></h2>
+<p>Our unique staffing model allows us to locally deliver high-end services at a moderate price.</p>
+              </div>
           </div>
+
         </div>
+
         <div class="span4">
 <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
 <script>

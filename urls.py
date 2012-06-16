@@ -1,6 +1,9 @@
 from django.conf.urls.defaults import *
 import settings
 
+from django.contrib import admin
+admin.autodiscover()
+
 handler500 = 'djangotoolbox.errorviews.server_error'
 
 urlpatterns = patterns('',
@@ -21,20 +24,33 @@ urlpatterns = patterns('',
      {'template': 'engineering.html'}),
     (r'^innovation/$', 'django.views.generic.simple.direct_to_template',
      {'template': 'innovation.html'}),
-    (r'^join/$', 'django.views.generic.simple.direct_to_template',
-     {'template': 'join.html'}),
-    (r'^partners/$', 'django.views.generic.simple.direct_to_template',
-     {'template': 'partners.html'}),
+# Enable later, when users can apply for a job
+#   (r'^join/$', 'django.views.generic.simple.direct_to_template',
+#    {'template': 'join.html'}),
+# Enable later
+#   (r'^labs/$', 'django.views.generic.simple.direct_to_template',
+#    {'template': 'labs.html'}),
+    (r'^leadership/$', 'django.views.generic.simple.direct_to_template',
+     {'template': 'leadership.html'}),
+    (r'^measurement/$', 'django.views.generic.simple.direct_to_template',
+     {'template': 'measurement.html'}),
+    (r'^methodology/$', 'django.views.generic.simple.direct_to_template',
+     {'template': 'methodology.html'}),
+# Enable later
+#   (r'^partners/$', 'django.views.generic.simple.direct_to_template',
+#    {'template': 'partners.html'}),
     (r'^product/$', 'django.views.generic.simple.direct_to_template',
      {'template': 'product.html'}),
     (r'^research/$', 'django.views.generic.simple.direct_to_template',
      {'template': 'research.html'}),
     (r'^team/$', 'django.views.generic.simple.direct_to_template',
      {'template': 'team.html'}),
-    (r'^terms/$', 'django.views.generic.simple.direct_to_template',
-     {'template': 'terms.html'}),
+# Enable later, when users can apply for a job
+#   (r'^terms/$', 'django.views.generic.simple.direct_to_template',
+#    {'template': 'terms.html'}),
     (r'^value/$', 'django.views.generic.simple.direct_to_template',
      {'template': 'value.html'}),
     (r'^static/(?P<path>.*)$', 'django.views.static.serve',
          {'document_root': settings.MEDIA_ROOT, 'show_indexes': True}),
+    url(r'^admin/', include(admin.site.urls)),
 )

@@ -10,3 +10,6 @@ Our site will be hosted on Google App Engine, running on Pyton and Django.
 Django non-rel for Google App Engine on Python 2.7
 
 https://github.com/bobwei/Django-non-rel-for-Google-App-Engine-on-Python-2.7.git
+
+django-nonrel/django-nonrel
+python setup.py install

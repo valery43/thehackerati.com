@@ -8,12 +8,13 @@
             <ul class="nav nav-list">
               <li class="nav-header"><a href="/engineering">Engineering</a></li>
               <li><a href="/product">Product Development</a></li>
-              <li><a href="/research">Research & Development</a></li>
+              <li><a href="/research">Research</a></li>
               <li><a href="/custom">Custom Engineering</a></li>
             </ul>
           </div>
         </div>
         <div class="span6">
+          <h1><i class="icon-cogs"></i> {% block title %}{% endblock %}</h1>
           {% block content %}{% endblock %}
         </div>
         <div class="span3">

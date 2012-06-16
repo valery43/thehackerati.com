@@ -1,9 +1,31 @@
-/*!
+/*
  * 
  */
 
-.brand {
-  color: #ffffff;
+a.brand {
+  color: #ffffff ! important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: museo-slab, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 8px;
+}
+
+body {
+  margin: 0;
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #ffffff;
 }
 
 .container footer p {
