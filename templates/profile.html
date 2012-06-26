@@ -1,0 +1,19 @@
+{% extends 'about_layout.html' %}
+{% load github_org %}
+{% block title %}{% github_user_name login %}{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="span6">
+    {% github_user login 160 %}
+  </div>
+</div>
+
+{% endblock %}
+
+{% block sidebar %}
+<blockquote>
+<p>"The secret of leadership is simple: Do what you believe in. Paint a picture of the future. Go there. People will follow."</p>
+<small>Seth Godin</small>
+</blockquote>
+{% endblock %}

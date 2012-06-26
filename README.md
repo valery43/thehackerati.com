@@ -7,9 +7,14 @@ Aside from typical marketing stuff, prospective Hackerati will be able to regist
 
 Our site will be hosted on Google App Engine, running on Pyton and Django.
 
-Django non-rel for Google App Engine on Python 2.7
+Dependencies
+------------
+Python 2.7:
 
-https://github.com/bobwei/Django-non-rel-for-Google-App-Engine-on-Python-2.7.git
+Google App Engine:
 
-django-nonrel/django-nonrel
-python setup.py install
+gitpy:
+
+    $ git clone https://github.com/thehackerati/gitpy.git
+    $ cd gitpy
+    $ sudo python setup.py install
