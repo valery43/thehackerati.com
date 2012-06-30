@@ -32,8 +32,8 @@ Third-party Modules
 * https://github.com/jacquev6/PyGithub
 * https://github.com/waylan/Python-Markdown
 
-MIT License
------------
+License
+-------
 Copyright (c) 2012 The Hackerati, Inc. All rights reserved.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
