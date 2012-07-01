@@ -49,7 +49,10 @@ TEST_RUNNER = 'djangotoolbox.test.CapturingTestSuiteRunner'
 
 ADMIN_MEDIA_PREFIX = '/media/admin/'
 PROJECT_DIR = os.path.dirname(__file__)
-TEMPLATE_DIRS = (os.path.join(PROJECT_DIR, 'templates'),)
+TEMPLATE_DIRS = (
+    os.path.join(PROJECT_DIR, 'templates'),
+    os.path.join(PROJECT_DIR, 'github_org/templates'),
+)
 
 # Twitter Bootstrap integration
 MEDIA_ROOT = (os.path.join(PROJECT_DIR, 'static'))
