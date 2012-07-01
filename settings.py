@@ -22,7 +22,7 @@ INSTALLED_APPS = (
     'dbindexer',
 
     # The Hackerati apps
-    'github_org',
+    'thehackerati_team',
 
     # djangoappengine should come last, so it can override a few manage.py commands
     'djangoappengine',
@@ -51,7 +51,6 @@ ADMIN_MEDIA_PREFIX = '/media/admin/'
 PROJECT_DIR = os.path.dirname(__file__)
 TEMPLATE_DIRS = (
     os.path.join(PROJECT_DIR, 'templates'),
-    os.path.join(PROJECT_DIR, 'github_org/templates'),
 )
 
 # Twitter Bootstrap integration

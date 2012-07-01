@@ -4,8 +4,6 @@ import settings
 from django.contrib import admin
 admin.autodiscover()
 
-import github_org
-
 handler500 = 'djangotoolbox.errorviews.server_error'
 
 urlpatterns = patterns('',
@@ -24,15 +22,13 @@ urlpatterns += patterns('django.views.generic.simple',
     (r'^custom/$', 'direct_to_template', {'template': 'custom.html'}),
     (r'^engineering/$', 'direct_to_template', {'template': 'engineering.html'}),
     (r'^innovation/$', 'direct_to_template', {'template': 'innovation.html'}),
-# Enable later, when users can apply for a job
-#   (r'^join/$', 'direct_to_template', #    {'template': 'join.html'}),
 # Enable later
-#   (r'^labs/$', 'direct_to_template', #    {'template': 'labs.html'}),
+#   (r'^labs/$', 'direct_to_template', {'template': 'labs.html'}),
     (r'^leadership/$', 'direct_to_template', {'template': 'leadership.html'}),
     (r'^measurement/$', 'direct_to_template', {'template': 'measurement.html'}),
     (r'^methodology/$', 'direct_to_template', {'template': 'methodology.html'}),
 # Enable later
-#   (r'^partners/$', 'direct_to_template', #    {'template': 'partners.html'}),
+#   (r'^partners/$', 'direct_to_template', {'template': 'partners.html'}),
     (r'^product/$', 'direct_to_template', {'template': 'product.html'}),
     (r'^research/$', 'direct_to_template', {'template': 'research.html'}),
     (r'^team/$', 'direct_to_template', {'template': 'team.html'}),
@@ -42,6 +38,6 @@ urlpatterns += patterns('django.views.generic.simple',
 )
 
 urlpatterns += patterns('',
-    url(r'^people/', include('github_org.urls')),
+    url(r'^people/', include('thehackerati_team.urls')),
     url(r'^admin/', include(admin.site.urls)),
 )
