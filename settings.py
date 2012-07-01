@@ -21,6 +21,9 @@ INSTALLED_APPS = (
     'autoload',
     'dbindexer',
 
+    # The Hackerati apps
+    'thehackerati_team',
+
     # djangoappengine should come last, so it can override a few manage.py commands
     'djangoappengine',
 )
@@ -46,7 +49,9 @@ TEST_RUNNER = 'djangotoolbox.test.CapturingTestSuiteRunner'
 
 ADMIN_MEDIA_PREFIX = '/media/admin/'
 PROJECT_DIR = os.path.dirname(__file__)
-TEMPLATE_DIRS = (os.path.join(PROJECT_DIR, 'templates'),)
+TEMPLATE_DIRS = (
+    os.path.join(PROJECT_DIR, 'templates'),
+)
 
 # Twitter Bootstrap integration
 MEDIA_ROOT = (os.path.join(PROJECT_DIR, 'static'))

@@ -1,0 +1,25 @@
+{% extends 'about_layout.html' %}
+{% block title %}Team{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="span6">
+<p>something about our team</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="span6">
+    {% load github_org %}
+    {% github_members 'thehackerati' 160 %}
+  </div>
+</div>
+
+{% endblock %}
+
+{% block sidebar %}
+<blockquote>
+<p>"The secret of leadership is simple: Do what you believe in. Paint a picture of the future. Go there. People will follow."</p>
+<small>Seth Godin</small>
+</blockquote>
+{% endblock %}
