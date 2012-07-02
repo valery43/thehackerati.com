@@ -1,34 +1,52 @@
 {% extends 'base_template.html' %}
 {% block title %}Welcome to The Hackerati!{% endblock %}
 
+<script type="text/javascript">
+$(function() {
+  // start the icon carousel
+  $('#thehackeratiCarousel').carousel({
+    interval: 5000
+  });
+});
+</script>
+
 {% block layout %}
     <div class="container">
       <div class="hero-unit">
-        <h1>the hack-er-a-ti</h1>
-        <h2><i>plural noun</i></h2>
-        <large>
-        <ol>
-          <li>persons possessing superior hacking abilities</li>
-          <li>a world-class engineering firm, based in New York City, delivering <strong>Engineering as a Service</strong>: variable-cost <a href="/product">product development</a>, <a href="/research">research</a>, and other <a href="/custom">custom</a> software and hardware development.</li>
-        </ol>
-        </large>
-        <p><a class="btn btn-primary btn-large" href="/engineering">Learn more &raquo;</a></p>
-      </div>
-
-      <div class="row">
-        <div class="span8">
-
-          <div class="row">
-            <div class="span8">
-                <h2><i class="icon-cloud"></i> Your Strategic Engineering Partner</h2>
+        <div id="thehackeratiCarousel" class="carousel slide">
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            <div class="active item">
+              <h1>Engineering as a Service</h1>
+              <h2>the hack-er-a-ti</h2>
+              <p><strong><i>plural noun</i></strong></p>
+              <p>
+              1. persons possessing superior hacking abilities<br />
+              2. a world-class engineering firm delivering variable-cost <a href="/product">product development</a>, <a href="/research">research</a>, and other <a href="/custom">custom</a> software and hardware development.
+              </p>
+            </div>
+            <div class="item">
+              <h1>Strategic Engineering Partner</h1>
 <p>As organizations are growing more dependent on sophisticated data analysis to maintain their competitive advantage, their ability to hire the technical talent needed to leverage this analysis is dwindling.</p>
 <blockquote>
 <p>"By 2018, the United States alone could face a shortage of 140,000 to 190,000 people with deep analytical skills as well as 1.5 million managers and analysts with the know-how to use the analysis of big data to make effective decisions."</p>
 <small>McKinsey Global Institute</small>
 </blockquote>
-<p>The Hackerati can help. <a href="/contact">Contact us</a>!</p>
-              </div>
+<p>The Hackerati can help!</p>
+            </div>
           </div>
+          <!-- Carousel nav -->
+          <a class="carousel-control left" href="#thehackeratiCarousel" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right" href="#thehackeratiCarousel" data-slide="next">&rsaquo;</a>
+        </div>
+
+        <div class="hero-content">
+          <p><a class="btn btn-primary btn-large" href="/engineering">Learn more &raquo;</a></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="span8">
 
           <div class="row">
             <div class="span4">
