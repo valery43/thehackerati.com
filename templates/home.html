@@ -1,47 +1,29 @@
 {% extends 'base_template.html' %}
 {% block title %}Welcome to The Hackerati!{% endblock %}
 
-<script type="text/javascript">
-$(function() {
-  // start the icon carousel
-  $('#thehackeratiCarousel').carousel({
-    interval: 5000
-  });
-});
-</script>
-
 {% block layout %}
     <div class="container">
       <div class="hero-unit">
-        <div id="thehackeratiCarousel" class="carousel slide">
-          <!-- Carousel items -->
-          <div class="carousel-inner">
-            <div class="active item">
-              <h1>Engineering as a Service</h1>
-              <h2>the hack-er-a-ti</h2>
-              <p><strong><i>plural noun</i></strong></p>
-              <p>
-              1. persons possessing superior hacking abilities<br />
-              2. a world-class engineering firm delivering variable-cost <a href="/product">product development</a>, <a href="/research">research</a>, and other <a href="/custom">custom</a> software and hardware development.
-              </p>
-            </div>
-            <div class="item">
-              <h1>Strategic Engineering Partner</h1>
-<p>As organizations are growing more dependent on sophisticated data analysis to maintain their competitive advantage, their ability to hire the technical talent needed to leverage this analysis is dwindling.</p>
-<blockquote>
-<p>"By 2018, the United States alone could face a shortage of 140,000 to 190,000 people with deep analytical skills as well as 1.5 million managers and analysts with the know-how to use the analysis of big data to make effective decisions."</p>
-<small>McKinsey Global Institute</small>
-</blockquote>
-<p>The Hackerati can help!</p>
-            </div>
-          </div>
-          <!-- Carousel nav -->
-          <a class="carousel-control left" href="#thehackeratiCarousel" data-slide="prev">&lsaquo;</a>
-          <a class="carousel-control right" href="#thehackeratiCarousel" data-slide="next">&rsaquo;</a>
-        </div>
+        <h1>Engineering as a Service</h1>
+        <h2>the hack-er-a-ti</h2>
+        <p><strong><i>plural noun</i></strong></p>
+        <p>
+        <ol>
+          <li>persons possessing superior hacking abilities</li>
+          <li>a world-class engineering firm delivering variable-cost <a href="/product">product development</a>, <a href="/research">research</a>, and other <a href="/custom">custom</a> software and hardware development.</li>
+        </ol>
+        </p>
+        <a class="btn btn-primary btn-large" href="/engineering">Learn more &raquo;</a>
+      </div>
 
-        <div class="hero-content">
-          <p><a class="btn btn-primary btn-large" href="/engineering">Learn more &raquo;</a></p>
+      <div class="row">
+        <div class="span12">
+          <div class="social-buttons">
+<a href="https://twitter.com/thehackerati" class="twitter-follow-button" data-show-count="true">Follow @thehackerati</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+<script type="IN/FollowCompany" data-id="2639782" data-counter="right"></script>
+          </div>
         </div>
       </div>
 
@@ -83,7 +65,7 @@ new TWTR.Widget({
   title: 'The Hackerati',
   subject: 'Status',
   width: 'auto',
-  height: 300,
+  height: 150,
   theme: {
     shell: {
       background: '#eeeeee',
@@ -92,7 +74,7 @@ new TWTR.Widget({
     tweets: {
       background: '#ffffff',
       color: '#000000',
-      links: '#0088cc'
+      links: '#005496'
     }
   },
   features: {
