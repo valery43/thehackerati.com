@@ -104,6 +104,10 @@
   background-color: #004099 \9;
 }
 
+.site-section-heading {
+  #padding: 0px;
+}
+
 /* Section Sub-nav Styles */
 .well {
   min-height: 20px;
@@ -209,10 +213,14 @@ h6 > a:hover {
 body {
   margin: 0;
   font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 18px;
+  line-height: 24px;
   color: #434b52;
   background-color: #ffffff;
+}
+
+li {
+  line-height: 24px;
 }
 
 a {
