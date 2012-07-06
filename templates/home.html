@@ -18,12 +18,24 @@
 
       <div class="row">
         <div class="span12">
-          <div class="social-buttons">
-<a href="https://twitter.com/thehackerati" class="twitter-follow-button" data-show-count="true">Follow @thehackerati</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/FollowCompany" data-id="2639782" data-counter="right"></script>
-          </div>
+         <section id="social-buttons">
+            <span class="twitter-button">
+              <a href="https://twitter.com/thehackerati" class="twitter-follow-button" data-show-count="true">Follow @thehackerati</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </span>
+            <span class="linkedin-button">
+              <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+              <script type="IN/FollowCompany" data-id="2639782" data-counter="right"></script>
+            </span>
+            <span class="g-plusone" data-size="medium">
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+            </span> 
+          </section>
         </div>
       </div>
 
@@ -65,7 +77,7 @@ new TWTR.Widget({
   title: 'The Hackerati',
   subject: 'Status',
   width: 'auto',
-  height: 150,
+  height: 200,
   theme: {
     shell: {
       background: '#eeeeee',

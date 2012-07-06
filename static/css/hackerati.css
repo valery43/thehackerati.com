@@ -42,6 +42,7 @@
   background-image: -o-linear-gradient(top, #005496, #007ee2);
   background-image: linear-gradient(top, #005496, #007ee2);
   background-repeat: repeat-x;
+  margin-bottom: 20px;
 }
 
 .hero-unit h1 {
@@ -108,75 +109,6 @@
   #padding: 0px;
 }
 
-/* Section Sub-nav Styles */
-.well {
-  min-height: 20px;
-  padding: 0px;
-  margin-bottom: 20px;
-  background-color: #005496;
-  background-image: -moz-linear-gradient(top, #005496, #007ee2);
-  background-image: -ms-linear-gradient(top, #005496, #007ee2);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#005496), to(#007ee2));
-  background-image: -webkit-linear-gradient(top, #005496, #007ee2);
-  background-image: -o-linear-gradient(top, #005496, #007ee2);
-  background-image: linear-gradient(top, #005496, #007ee2);
-  background-repeat: repeat-x;
-  border: 1px solid #eee;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-}
-
-.well .nav {
-  padding: 19px;
-  margin-left: 0;
-  margin-bottom: 18px;
-  list-style: none;
-}
-
-.well .nav-list .nav-header {
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-left: -1px;
-  margin-right: -1px;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 32px;
-  color: #ffffff;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  text-transform: none;
-}
-
-.well .nav-list {
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  font-size: 16px;
-  letter-spacing: 1px;
-  color: #ffffff;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-}
-
-.nav-list > li > a,
-.nav-list .nav-header {
-  margin-left: -1px;
-  margin-right: -1px;
-}
-
-.well .nav > li > a {
-  color: #ffffff;
-}
-
-.well .nav > li > a:hover {
-  color: #005496;
-  background-color: #fbefe5;
-}
-
 /* Body Styles */
 h1,
 h2,
@@ -238,17 +170,20 @@ a:hover {
 
 .centered_img {
   text-align: center;
-  margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.social-buttons {
+#social-buttons {
   text-align: center;
-  margin-top: 5px;
-  margin-bottom: 15px;
+  vertical-align: top;
+  margin-bottom: 20px;
 }
 
-/* Smartphone Portrait Responsive Styles */
+#social-buttons .linkedin-button {
+  margin-right: 25px;
+}
+
+/* Responsive Styles for Smartphone (Fluid columns, no fixed widths) */
 @media (max-width: 480px) {
   /* Adjust the hero unit */ 
   .hero-unit {
@@ -256,6 +191,7 @@ a:hover {
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+    bottom-margin: 5px;
   }
   .hero-unit h1 {
     font-size: 24px;
@@ -270,23 +206,58 @@ a:hover {
     font-weight: 200;
     line-height: 18px;
   }
+
+  #social-buttons {
+    margin-bottom: 5px;
+  }
+
+  #social-buttons .linkedin-button {
+    position: relative;
+    top: 13px;
+  }
 }
 
-/* Smartphone Landscape Responsive Styles */
+/* Responsive Styles for Smartphone to Tablets (Fluid columns, no fixed widths) */
 @media (max-width: 767px) {
 }
 
+/* Responsive Styles for Tablets (Col Width: 42px; Gutter Width: 20px) */
 @media (min-width: 768px) and (max-width: 979px) {
 }
 
-@media (max-width: 480px) {
-}
-
-@media (min-width: 1200px) {
-}
-
+/* Responsive Styles for Tablets or Smaller */
 @media (max-width: 979px) {
 }
 
+/* iPad2 in portrait orientation */
+@media screen and (device-width: 768px) and (orientation:portrait) {
+  #social-buttons .linkedin-button {
+    position: relative;
+    top: 13px;
+  }
+}
+
+/* iPad2 in landscape orientation */
+@media screen and (min-device-width: 1009) and (orientation:landscape) {
+  #social-buttons .linkedin-button {
+    position: relative;
+    top: 13px;
+  }
+}
+
+/* Default (Col Width: 60px; Gutter Width: 20px) */
 @media (min-width: 980px) {
+}
+
+/* Large Displays (Col Width: 70px; Gutter Width: 30px) */
+@media (min-width: 1200px) {
+
+}
+
+/* Responsive Styles for Retina Displays */
+@media all and (-webkit-min-device-pixel-ratio: 2) {
+  #social-buttons .linkedin-button {
+    position: relative;
+    top: 13px;
+  }
 }
