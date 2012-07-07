@@ -260,7 +260,7 @@ a:hover {
 }
 
 /* iPad2 in landscape orientation */
-@media screen and (min-device-width: 1009) and (orientation:landscape) {
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
   #social-buttons .linkedin-button {
     position: relative;
     top: 13px;
@@ -277,7 +277,10 @@ a:hover {
 }
 
 /* Responsive Styles for Retina Displays */
-@media all and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
   #social-buttons .linkedin-button {
     position: relative;
     top: 13px;
