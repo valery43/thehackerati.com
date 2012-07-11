@@ -2,21 +2,22 @@
 
 {% block layout %}
     <div class="container">
-      <div class="row">
-        <div class="span3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header"><a href="/value">Value</a></li>
-              <li><a href="/measurement">Measurement</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="span6">
-          <h1><i class="icon-thumbs-up"></i> {% block title %}{% endblock %}</h1>
-          {% block content %}{% endblock %}
-        </div>
-        <div class="span3">
+      <div class="hero-unit site-section-heading">
+        <h2><i class="icon-thumbs-up"></i> {% block title %}{% endblock %}</h2>
+
+        <div class="quote">
           {% block sidebar %}{% endblock %}
+        </div>
+
+        <div class="btn-group">
+          <a class="btn btn-primary btn-large" href="/value">Value &raquo;</a>
+          <a class="btn btn-primary btn-large" href="/measurement">Measurement</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="span12">
+          {% block content %}{% endblock %}
         </div>
       </div>
     </div>

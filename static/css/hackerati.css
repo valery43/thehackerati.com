@@ -1,11 +1,115 @@
 /*
- * 
+ * Overrides to default Bootstrap styles
  */
 
-a.brand {
-  color: #ffffff ! important;
+/* Main Navigation Styles */
+.navbar-inner {
+  background-color: #333333;
+  background-image: -moz-linear-gradient(top, #333333, #222222);
+  background-image: -ms-linear-gradient(top, #333333, #222222);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222));
+  background-image: -webkit-linear-gradient(top, #333333, #222222);
+  background-image: -o-linear-gradient(top, #333333, #222222);
+  background-image: linear-gradient(top, #333333, #222222);
+  background-repeat: repeat-x;
 }
 
+.navbar .brand {
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.navbar .brand .icon-cloud {
+  color: #ffffff;
+}
+
+.navbar .nav > li > a {
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.navbar .nav > li > a:hover {
+  color: #fbefe5;
+}
+
+/* Hero Unit Styles */
+.hero-unit {
+  background-color: #005496;
+  background-image: -moz-linear-gradient(top, #005496, #007ee2);
+  background-image: -ms-linear-gradient(top, #005496, #007ee2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#005496), to(#007ee2));
+  background-image: -webkit-linear-gradient(top, #005496, #007ee2);
+  background-image: -o-linear-gradient(top, #005496, #007ee2);
+  background-image: linear-gradient(top, #005496, #007ee2);
+  background-repeat: repeat-x;
+  margin-bottom: 20px;
+}
+
+.hero-unit h1 {
+  font-size: 60px;
+  letter-spacing: 1px;
+  color: #fefdfb;
+}
+
+.hero-unit h2 {
+  font-size: 48px;
+  letter-spacing: 1px;
+  line-height: 64px;
+  color: #fefdfb;
+}
+
+.hero-unit li,
+.hero-unit p {
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 32px;
+  color: #000000;
+}
+
+.hero-unit a {
+  color: #fbefe5;
+}
+
+.hero-unit a:hover {
+  color: #fefdfb;
+}
+
+/* Learn More Button Styles */
+.btn-primary {
+  background-color: #e0781a;
+  background-image: -moz-linear-gradient(top, #e0781a, #eead73);
+  background-image: -ms-linear-gradient(top, #e0781a, #eead73);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e0781a), to(#eead73));
+  background-image: -webkit-linear-gradient(bottom, #e0781a, #eead73);
+  background-image: -o-linear-gradient(top, #e0781a, #eead73);
+  background-image: linear-gradient(top, #e0781a, #eead73);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0781a', endColorstr='#eead73', GradientType=0);
+  border-color: #eead73 #eead73 #003580;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #eead73;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  background-color: #e0781a;
+  *background-color: #004ab3;
+}
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #004099 \9;
+}
+
+.site-section-heading {
+  #padding: 0px;
+}
+
+/* Body Styles */
 h1,
 h2,
 h3,
@@ -13,19 +117,51 @@ h4,
 h5,
 h6 {
   font-family: museo-slab, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #434b52;
 }
 
 h1 {
   margin-bottom: 8px;
 }
 
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+  color: #005396;
+}
+
+h1 > a:hover,
+h2 > a:hover,
+h3 > a:hover,
+h4 > a:hover,
+h5 > a:hover,
+h6 > a:hover {
+  color: #434b52;
+}
+
 body {
   margin: 0;
   font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  color: #333333;
+  font-size: 18px;
+  line-height: 24px;
+  color: #434b52;
   background-color: #ffffff;
+}
+
+li {
+  line-height: 24px;
+}
+
+a {
+  color: #ca6c18;
+  text-decoration: none;
+}
+a:hover {
+  color: #a86d39;
+  text-decoration: none;
 }
 
 .container footer p {
@@ -34,6 +170,119 @@ body {
 
 .centered_img {
   text-align: center;
-  margin-top: 10px;
   margin-bottom: 10px;
+}
+
+#social-buttons {
+  text-align: center;
+  vertical-align: top;
+  margin-bottom: 20px;
+}
+
+#social-buttons .linkedin-button {
+  margin-right: 25px;
+}
+
+/* Responsive Styles for Smartphone (Fluid columns, no fixed widths) */
+@media (max-width: 480px) {
+  /* Adjust the hero unit */ 
+  .hero-unit {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    bottom-margin: 5px;
+  }
+  .hero-unit h1 {
+    font-size: 24px;
+  }
+  .hero-unit h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .hero-unit p,
+  .hero-unit li {
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 16px;
+  }
+  .btn-large {
+    padding: 6px 10px;
+    font-size: 12px;
+    line-height: normal;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+  #social-buttons {
+    margin-bottom: 10px;
+  }
+
+  #social-buttons .linkedin-button {
+    position: relative;
+    top: 13px;
+  }
+
+  h2 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  body {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  li {
+    line-height: 16px;
+  }
+}
+
+/* Responsive Styles for Smartphone to Tablets (Fluid columns, no fixed widths) */
+@media (max-width: 767px) {
+}
+
+/* Responsive Styles for Tablets (Col Width: 42px; Gutter Width: 20px) */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+/* Responsive Styles for Tablets or Smaller */
+@media (max-width: 979px) {
+}
+
+/* iPad2 in portrait orientation */
+@media screen and (device-width: 768px) and (orientation:portrait) {
+  #social-buttons .linkedin-button {
+    position: relative;
+    top: 13px;
+  }
+}
+
+/* iPad2 in landscape orientation */
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  #social-buttons .linkedin-button {
+    position: relative;
+    top: 13px;
+  }
+}
+
+/* Default (Col Width: 60px; Gutter Width: 20px) */
+@media (min-width: 980px) {
+}
+
+/* Large Displays (Col Width: 70px; Gutter Width: 30px) */
+@media (min-width: 1200px) {
+
+}
+
+/* Responsive Styles for Retina Displays */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+  #social-buttons .linkedin-button {
+    position: relative;
+    top: 13px;
+  }
 }

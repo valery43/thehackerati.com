@@ -2,23 +2,25 @@
 
 {% block layout %}
     <div class="container">
-      <div class="row">
-        <div class="span3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header"><a href="/innovation">Innovation</a></li>
-<!--
-              <li><a href="/labs">Labs</a></li>
--->
-            </ul>
-          </div>
-        </div>
-        <div class="span6">
-          <h1><i class="icon-beaker"></i> {% block title %}{% endblock %}</h1>
-          {% block content %}{% endblock %}
-        </div>
-        <div class="span3">
+      <div class="hero-unit site-section-heading">
+        <h2><i class="icon-beaker"></i> {% block title %}{% endblock %}</h2>
+
+        <div class="quote">
           {% block sidebar %}{% endblock %}
+        </div>
+
+        <div class="btn-group">
+          <a class="btn btn-primary btn-large" href="/innovation">Innovation &raquo;</a>
+<!--
+          <a class="btn btn-primary btn-large" href="/labs">Labs</a>
+          <a class="btn btn-primary btn-large" href="/projects">Open Source</a>
+-->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="span12">
+          {% block content %}{% endblock %}
         </div>
       </div>
     </div>
