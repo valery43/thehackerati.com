@@ -52,6 +52,10 @@ class Site(models.Model):
         # Cached information will likely be incorrect now.
         if self.id in SITE_CACHE:
             del SITE_CACHE[self.id]
+        try:
+            ping_google()
+        except Exception:
+            pass
 
     def delete(self):
         pk = self.pk
