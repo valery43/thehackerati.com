@@ -1,3 +1,5 @@
+from django.contrib.sitemaps import GenericSitemap
+from django.contrib.sites.models import Site
 from django.conf.urls.defaults import *
 import settings
 
@@ -5,6 +7,15 @@ from django.contrib import admin
 admin.autodiscover()
 
 handler500 = 'djangotoolbox.errorviews.server_error'
+
+info_dict = {
+    'queryset': Site.objects.all(),
+    'date_field': 'pub_date',
+}
+
+sitemaps = {
+    'thehackerati': GenericSitemap(info_dict, priority=0.6, changefreq='daily'),
+}
 
 urlpatterns = patterns('',
     ('^_ah/warmup$', 'djangoappengine.views.warmup'),
@@ -40,4 +51,8 @@ urlpatterns += patterns('django.views.generic.simple',
 urlpatterns += patterns('',
     url(r'^people/', include('thehackerati_team.urls')),
     url(r'^admin/', include(admin.site.urls)),
+)
+
+urlpatterns += patterns('',
+    (r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
 )
