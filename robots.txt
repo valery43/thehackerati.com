@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /autoload/
+Disallow: /dbindexer/
+Disallow: /django/
+Disallow: /djangoappengine/
+Disallow: /djangotoolbox/
+Disallow: /github/
+Disallow: /markdown/
+Disallow: /static/
+Sitemap: http://thehackerati.com/sitemap.xml
